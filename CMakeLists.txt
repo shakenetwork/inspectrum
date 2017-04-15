@@ -3,6 +3,7 @@ project(inspectrum CXX)
 enable_testing()
 
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
 
@@ -49,6 +50,7 @@ list(APPEND inspectrum_sources
     tuner.cpp
     tunertransform.cpp
     util.cpp
+    resources.qrc
 )
 
 INCLUDE(FindPkgConfig)
